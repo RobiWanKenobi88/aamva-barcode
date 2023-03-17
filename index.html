@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Driver's License / ID Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+   
+  </head>
+  <body>
+   <script> src="https://cdn.jsdelivr.net/npm/flatpickr"</script>
+    <div class="container">
+      <div class="header">
+        <h1>Driver's License / ID Info</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name*</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="middle-name">Middle Name*</label>
+          <input type="text" id="middle-name" name="middle-name" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name*</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth*</label>
+          <input type="text" id="date-of-birth" name="date-of-birth" placeholder="MMDDYYYY" data-flatpickr required>
+        </div>
+    
+        <label>Gender:</label>
+<div class="gender-options">
+  <input type="radio" name="gender" id="male" value="male" checked>
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="other" value="other">
+  <label for="other">Other</label>
+</div>
+
+      
+      <div class="form-group">
+        <label for="height-feet">Height</label>
+        <div class="row">
+          <div class="col-6">
+            <input type="number" class="form-control" id="height-feet" placeholder="Feet" required>
+          </div>
+          <div class="col-6">
+            <input type="number" class="form-control" id="height-inches" placeholder="Inches" required>
+          </div>
+        </div>
+      </div>
+<div class="form-group">
+  <label for="eye-color">Eye Color</label>
+  <select class="form-control" id="eye-color">
+    <option value="brown">Brown</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="hazel">Hazel</option>
+    <option value="grey">Grey</option>
+    <option value="amber">Amber</option>
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="pink">Pink</option>
+    <option value="purple">Purple</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="hair-color">Hair Color</label>
+  <select class="form-control" id="hair-color">
+    <option value="bald">Bald</option>
+    <option value="black">Black</option>
+    <option value="blond">Blond</option>
+    <option value="brown">Brown</option>
+    <option value="grey">Grey</option>
+    <option value="red">Red</option>
+    <option value="auburn">Auburn</option>
+    <option value="sandy">Sandy</option>
+    <option value="white">White</option>
+    <option value="unknown">Unknown</option>
+  </select>
+</div>
+      <div class="form-group">
+          <label for="issue-date">Issue Date*</label>
+          <input type="text" id="issue-date" name="issue-date" placeholder="MMDDYYYY" data-flatpickr required>
+        </div>
+<div class="form-group">
+          <label for="expiration-date">Expiration Date*</label>
+          <input type="text" id="expiration-date" name="expiration-date" placeholder="MMDDYYYY" data-flatpickr required>
+        </div>
+      <div class="form-group">
+        <label for="veteran">Veteran</label>
+        <select class="form-control" id="veteran">
+          <option value="yes">Yes</option>
+          <option value="no" selected>No</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="organ-donor">Organ Donor</label>
+        <select class="form-control" id="organ-donor">
+          <option value="yes">Yes</option>
+          <option value="no" selected>No</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="vehicle-class">Vehicle Class</label>
+        <input type="text" class="form-control" id="vehicle-class" value="NONE">
+      </div>
+      
+      <div class="form-group">
+        <label for="restrictions">Restrictions</label>
+        <input type="text" class="form-control" id="restrictions" value="NONE">
+      </div>
+      
+      <div class="form-group">
+        <label for="endorsements">Endorsements</label>
+        <input type="text" class="form-control" id="endorsements" value="NONE">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </body>
+
+</html>
